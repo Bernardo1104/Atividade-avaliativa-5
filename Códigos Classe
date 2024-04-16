@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class empregados{
+  public String nome;
+  public String sobrenome;
+  private double salário;
+  Scanner entrada = new Scanner(System.in);
+  
+//construtor para os tres atributos;
+public empregados(String nome, String sobrenome, double salário){
+  this.nome = nome;
+  this.sobrenome = sobrenome;
+  this.salário = salário;
+}
+//Métodos get para cada atributo;
+public String getNome(){
+  return nome + " " + sobrenome;
+}
+  
+public String getSalario() {
+  return String.valueOf(salário);
+}
+//Métodos set para cada atributo;
+public void setNome(String nome){
+  this.nome = nome;
+}
+public void setSobrenome(String sobrenome){
+  this.sobrenome = sobrenome;
+}
+public void setSalario(double salário){
+  this.salário = salário;
+}
+//Crie um método para calcular o salário mensal. Se o salário mensal não for positivo, configure-o como 0.0;
+public void calcularSalarioMensal(){
+    if(salário < 0) {
+        salário = 0.0;
+    } else {
+        salário = salário;
+    }
+}
+//Crie um método para dar um aumento a cada funcionário de 10% e exibir o novo salário anual de cada instância;
+public void aumentarSalario(){
+    salário = salário * 100/ salário;
+  
+}
+}
