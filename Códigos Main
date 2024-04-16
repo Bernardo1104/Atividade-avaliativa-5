@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    //peca ao usuario para inserir duas instâncias da classe empregados exibindo o salário anual de cada instância;
+    Scanner entrada = new Scanner(System.in);
+    System.out.println("Insira o nome do primeiro empregado: ");
+    String nome1 = entrada.nextLine();
+    System.out.println("Insira o sobrenome do primeiro empregado: ");
+    String sobrenome1 = entrada.nextLine();
+    System.out.println("Insira o salário do primeiro empregado: ");
+    double salario1 = entrada.nextDouble();
+    System.out.println("Insira o nome do segundo empregado: ");
+    String nome2 = entrada.nextLine();
+    System.out.println("Insira o sobrenome do segundo empregado: ");
+    String sobrenome2 = entrada.nextLine();
+    System.out.println("Insira o salário do segundo empregado: ");
+    double salario2 = entrada.nextDouble();
+    
+    //De um aumento a cada fúncionario de 10% e exiba novamente o novo salário anual de cada instância;
+    salario1 = salario1 * 100/ salario1;
+    salario2 = salario2 * 100/ salario2;
+    //Exiba o nova salário anual de cada funcionario;
+    System.out.println("O novo salário anual do primeiro empregado é: " + salario1);
+    System.out.println("O novo salário anual do segundo empregado é: " + salario2);
+    
+    
+    
+  }
+
+
+}
